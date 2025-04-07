@@ -20,7 +20,7 @@
       <ol>
         <li>
           <button
-            onclick={() => openWindow("/pdc", 700, 564)}
+            onclick={() => openWindow("/pdc", 707, 566)}
             class="font-mono text-white hover:cursor-pointer"
             >PDC Generator</button
           >

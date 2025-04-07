@@ -64,7 +64,7 @@ ONLY READBACK SID, SQUAWK CODE, AND BAY NO. ON [FREQUENCY]`);
   }
 </script>
 
-<div class="p-2 w-fit h-fit">
+<div class="p-4 w-fit h-fit">
   <div class="w-full h-full">
     <h3 class="font-bold"><p class="text-2xl">PDC Generator</p></h3>
     <p><span class="font-bold">*</span> - Denotes a required field.</p>
@@ -82,7 +82,7 @@ ONLY READBACK SID, SQUAWK CODE, AND BAY NO. ON [FREQUENCY]`);
             cols="45"
             placeholder="Paste ATC24 Flight Plan Here"
             required
-            class="border-2 border-black rounded-sm resize-none p-2 overflow-clip"
+            class="border-1 border-black rounded-sm resize-none p-2 overflow-clip"
             bind:value={flightplan}
           ></textarea>
         </div>
@@ -182,12 +182,13 @@ ONLY READBACK SID, SQUAWK CODE, AND BAY NO. ON [FREQUENCY]`);
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   :where(input) {
-    border-width: 2px;
-    border-color: black;
+    border-width: 1px;
+    border-color: white;
     border-radius: 0.25rem;
     padding-left: 0.25rem;
+    color: white;
 
     &:user-invalid {
       border-color: red;
@@ -196,6 +197,11 @@ ONLY READBACK SID, SQUAWK CODE, AND BAY NO. ON [FREQUENCY]`);
     &:user-valid {
       border-color: green;
     }
+  }
+
+  :where(textarea) {
+    color: white;
+    border-color: white;
   }
 
   :where(label) {
