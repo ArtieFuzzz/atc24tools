@@ -64,15 +64,13 @@ ONLY READBACK SID, SQUAWK CODE, AND BAY NO. ON [FREQUENCY]`);
   }
 </script>
 
-<div class="p-4 w-fit h-fit">
+<div class="p-4 w-full h-fit">
   <div class="w-full h-full">
     <h3 class="font-bold"><p class="text-2xl">PDC Generator</p></h3>
     <p><span class="font-bold">*</span> - Denotes a required field.</p>
 
     <div class="flex flex-col gap-4 mt-2">
-      <div
-        class="flex flex-row justify-start items-start gap-3 w-2xl h- h-full"
-      >
+      <div class="flex flex-row justify-start items-start gap-3 w-fit h-full">
         <div class="flex flex-col h-full">
           <label for="flightplan">Flight Plan*</label>
           <textarea
@@ -147,6 +145,18 @@ ONLY READBACK SID, SQUAWK CODE, AND BAY NO. ON [FREQUENCY]`);
           </div>
 
           <div class="flex flex-col">
+            <label for="deliveryfrequency">Delivery Frequency*</label>
+            <input
+              type="text"
+              id="deliveryfrequency"
+              required
+              placeholder="118.55"
+              bind:value={deliveryFrequency}
+              maxlength="7"
+            />
+          </div>
+
+          <div class="flex flex-col">
             <label for="ssr">SSR (Squawk)*</label>
             <input
               type="number"
@@ -159,21 +169,9 @@ ONLY READBACK SID, SQUAWK CODE, AND BAY NO. ON [FREQUENCY]`);
             />
           </div>
 
-          <div class="flex flex-col">
-            <label for="deliveryfrequency">Delivery Frequency*</label>
-            <input
-              type="text"
-              id="deliveryfrequency"
-              required
-              placeholder="118.55"
-              bind:value={deliveryFrequency}
-              maxlength="7"
-            />
-          </div>
-
           <button
             onclick={() => generatePDC()}
-            class="p-2 hover:bg-black hover:text-white rounded-sm border-2 duration-150 linear"
+            class="p-1 px-6 hover:bg-pink hover:text-white hover:border-white rounded-sm border-2 duration-150 linear"
             >Copy</button
           >
         </div>
