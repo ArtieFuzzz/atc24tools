@@ -60,7 +60,7 @@ ONLY READBACK SID, SQUAWK CODE, AND BAY NO. ON [FREQUENCY]`);
       .replace("[FREQUENCY]", deliveryFrequency.padEnd(7, "0"))
       .replace("  ", " ");
 
-    navigator.clipboard.writeText(populated);
+    navigator.clipboard.writeText(`\`\`\`\n${populated}\n\`\`\``);
   }
 </script>
 
@@ -174,7 +174,7 @@ ONLY READBACK SID, SQUAWK CODE, AND BAY NO. ON [FREQUENCY]`);
           <button
             onclick={() => generatePDC()}
             class="p-2 hover:bg-black hover:text-white rounded-sm border-2 duration-150 linear"
-            >Generate</button
+            >Copy</button
           >
         </div>
       </div>
