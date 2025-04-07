@@ -1,1 +1,18 @@
+@import url("https://api.fonts.coollabs.io/css2?family=Cabin&display=swap");
 @import "tailwindcss";
+
+@theme {
+	--color-dark: #191717;
+	--color-pink: #ff838d;
+	--default-font-family: "Cabin";
+}
+
+::-moz-selection {
+	background-color: #007c72;
+	color: white;
+}
+
+::selection {
+	background-color: #007c72;
+	color: white;
+}

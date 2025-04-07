@@ -1,6 +1,4 @@
 <script lang="ts">
-  import "../styles/PDC.css";
-
   let flightplan = $state<string>("");
   let sid = $state<string>("");
   let initialClimb = $state<string>("");
@@ -17,7 +15,6 @@ CLIMB VIA SID TO [LEVEL]
 DEP FREQ [FREQUENCY]
 SQUAWK [SSR]
 ONLY READBACK SID, SQUAWK CODE, AND BAY NO. ON [FREQUENCY]`);
-  let pdc = $state<string>("");
 
   function addMinutes(minutes: number) {
     const currentTimestamp = new Date().getTime();
@@ -63,26 +60,32 @@ ONLY READBACK SID, SQUAWK CODE, AND BAY NO. ON [FREQUENCY]`);
       .replace("[FREQUENCY]", deliveryFrequency.padEnd(7, "0"))
       .replace("  ", " ");
 
-    pdc = populated;
+    navigator.clipboard.writeText(populated);
   }
 </script>
 
-<div class="border-2 border-black rounded-sm p-2 w-4xl h-fit">
+<div class="p-2 w-fit h-fit">
   <div class="w-full h-full">
-    <h3 class="font-bold"><p class="text-xl">PDC Generator</p></h3>
-    <div class="flex flex-row gap-4 mt-2">
-      <div class="flex flex-col justify-start items-start gap-3 w-2xl">
-        <label for="flightplan">Flight Plan*</label>
-        <textarea
-          name="flightplan"
-          id="flightplan"
-          rows="12"
-          cols="45"
-          placeholder="Paste ATC24 Flight Plan Here"
-          required
-          class="resize-none pl-2 overflow-clip"
-          bind:value={flightplan}
-        ></textarea>
+    <h3 class="font-bold"><p class="text-2xl">PDC Generator</p></h3>
+    <p><span class="font-bold">*</span> - Denotes a required field.</p>
+
+    <div class="flex flex-col gap-4 mt-2">
+      <div
+        class="flex flex-row justify-start items-start gap-3 w-2xl h- h-full"
+      >
+        <div class="flex flex-col h-full">
+          <label for="flightplan">Flight Plan*</label>
+          <textarea
+            name="flightplan"
+            id="flightplan"
+            rows="13"
+            cols="45"
+            placeholder="Paste ATC24 Flight Plan Here"
+            required
+            class="border-2 border-black rounded-sm resize-none p-2 overflow-clip"
+            bind:value={flightplan}
+          ></textarea>
+        </div>
 
         <div class="flex flex-row flex-wrap gap-2">
           <div class="flex flex-col">
@@ -170,21 +173,11 @@ ONLY READBACK SID, SQUAWK CODE, AND BAY NO. ON [FREQUENCY]`);
 
           <button
             onclick={() => generatePDC()}
-            class="p-2 hover:bg-black hover:text-white rounded-sm border-2"
+            class="p-2 hover:bg-black hover:text-white rounded-sm border-2 duration-150 linear"
             >Generate</button
           >
         </div>
-
-        <p><span class="font-bold">*</span> - Denotes a required field.</p>
       </div>
-      <textarea
-        name="pdc"
-        id="pdc"
-        readonly
-        cols="67"
-        class="resize-none h-auto p-2 text-xl font-mono"
-        >{pdc || template}</textarea
-      >
     </div>
   </div>
 </div>
