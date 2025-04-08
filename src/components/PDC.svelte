@@ -7,14 +7,15 @@
   let departureFrequency = $state<string>("");
   let squawk = $state<string>("");
   let deliveryFrequency = $state<string>("");
-  const template = $state(`PDC [TIMESTAMP]
-[CALLSIGN] [ATYPE] [ADEP] [ETD]
-CLEARED TO [ADES] VIA [RUNWAY] [SID] DEP [TRANSITION]
-ROUTE [ROUTE]
-CLIMB VIA SID TO [LEVEL]
-DEP FREQ [FREQUENCY]
-SQUAWK [SSR]
-ONLY READBACK SID, SQUAWK CODE, AND BAY NO. ON [FREQUENCY]`);
+  const template =
+    $state(`\u001b[1;37mPDC\u001b[0;0m \u001b[1;33m[TIMESTAMP]\u001b[0;0m
+\u001b[1;37;42m[CALLSIGN]\u001b[0;0m \u001b[1;35m[ATYPE] [ADEP]\u001b[0;0m \u001b[1;33m[ETD]\u001b[0;0m
+\u001b[1;37mCLEARED TO \u001b[1;35m[ADES]\u001b[0;0m \u001b[1;37mVIA\u001b[0;0m [RUNWAY] \u001b[1;35m[SID]\u001b[0;0m \u001b[1;37mDEP\u001b[0;0m [TRANSITION]
+\u001b[1;37mROUTE\u001b[0;0m \u001b[1;35m[ROUTE]\u001b[0;0m
+\u001b[1;37mCLIMB VIA SID TO\u001b[0;0m \u001b[1;35m[LEVEL]\u001b[0;0m
+\u001b[1;37mDEP FREQ\u001b[0;0m \u001b[1;40;35m[FREQUENCY]\u001b[0;0m
+\u001b[1;37mSQUAWK \u001b[1;40;35m[SSR]\u001b[0;0m
+\u001b[1;37mONLY READBACK SID, SQUAWK CODE, AND BAY NO. ON\u001b[0;0m \u001b[1;40;37m[FREQUENCY]\u001b[0;0m`);
 
   function addMinutes(minutes: number) {
     const currentTimestamp = new Date().getTime();
@@ -47,11 +48,16 @@ ONLY READBACK SID, SQUAWK CODE, AND BAY NO. ON [FREQUENCY]`);
       .replace("[ADEP]", flightinfo[3])
       .replace("[ETD]", `${etaHours}${etaMinutes}`)
       .replace("[ADES]", flightinfo[4])
-      .replace("[RUNWAY]", runway ? `RWY ${runway.toUpperCase()}` : "")
+      .replace(
+        "[RUNWAY]",
+        runway ? `\u001b[1;35mRWY ${runway.toUpperCase()}\u001b[0;0m` : "",
+      )
       .replace("[SID]", sid)
       .replace(
         "[TRANSITION]",
-        transition ? `${transition.toUpperCase()} TRANSITION` : "",
+        transition
+          ? `\u001b[1;35m${transition.toUpperCase()}\u001b[0;0m \u001b[1;37mTRANSITION\u001b[0;0m`
+          : "",
       )
       .replace("[ROUTE]", flightinfo[5])
       .replace("[LEVEL]", initialClimb)
@@ -60,7 +66,8 @@ ONLY READBACK SID, SQUAWK CODE, AND BAY NO. ON [FREQUENCY]`);
       .replace("[FREQUENCY]", deliveryFrequency.padEnd(7, "0"))
       .replace("  ", " ");
 
-    navigator.clipboard.writeText(`\`\`\`\n${populated}\n\`\`\``);
+    navigator.clipboard.writeText(`\`\`\`ansi\n${populated}\n\`\`\``);
+    return;
   }
 </script>
 
