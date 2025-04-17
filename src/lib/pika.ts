@@ -2,8 +2,8 @@ import Pika from "pika-id";
 
 export default new Pika([
 	{
-		prefix: "notams",
-		description: "Unique identifier for a group of NOTAMs",
-		secure: true,
+		prefix: "notam",
+		description: "Unique identifier for a NOtice To Air Men",
+		secure: false,
 	},
 ]);

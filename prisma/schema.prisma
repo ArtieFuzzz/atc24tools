@@ -14,23 +14,28 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Notam {
- id String @id
- location String // Will be validated by the backend (valid: IPPH, etc...)
- Cards NotamCard[]
-}
-
 enum NotamType {
-  NEW // NOTAMN
-  REVISION // NOTAMR
-  CANCEL // NOTAMC
+  NEW // NOTAMN // N
+  REPLACEMENT // NOTAMR // R
+  CANCEL // NOTAMC // C
 }
 
-model NotamCard {
-  id Int @id @default(autoincrement())
-  type NotamType
-  // summary String
-  content String
-  startTime DateTime // TODO: Ensure startTime is less than the endTime 
-  endTime DateTime
+enum NotamState {
+  PENDING
+  APPROVED
+  ARCHVIED
+}
+
+model Notam {
+  id String @id
+  state NotamState @default(PENDING)
+  type NotamType // Doubles as the series
+  summary String
+  location String // A) // ICAO code will get validated by the backend.
+  subject String // E) // i.e. ILS DME 'ISY' 109.9/36X RWY 07
+  status String // E) // NOT AVBL
+  content String? // E)
+  // Could use startTime as the part after the "/" in `C60/21`. i.e. The year. 
+  startTime DateTime // B) //! Ensure startTime is less than the endTime 
+  endTime DateTime // C)
 }
