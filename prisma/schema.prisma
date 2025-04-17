@@ -13,3 +13,24 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Notam {
+ id String @id
+ location String // Will be validated by the backend (valid: IPPH, etc...)
+ Cards NotamCard[]
+}
+
+enum NotamType {
+  NEW // NOTAMN
+  REVISION // NOTAMR
+  CANCEL // NOTAMC
+}
+
+model NotamCard {
+  id Int @id @default(autoincrement())
+  type NotamType
+  // summary String
+  content String
+  startTime DateTime // TODO: Ensure startTime is less than the endTime 
+  endTime DateTime
+}
