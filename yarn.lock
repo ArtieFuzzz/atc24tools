@@ -491,8 +491,8 @@ __metadata:
   linkType: hard
 
 "@sveltejs/kit@npm:^2.16.0":
-  version: 2.21.2
-  resolution: "@sveltejs/kit@npm:2.21.2"
+  version: 2.21.3
+  resolution: "@sveltejs/kit@npm:2.21.3"
   dependencies:
     "@sveltejs/acorn-typescript": "npm:^1.0.5"
     "@types/cookie": "npm:^0.6.0"
@@ -506,13 +506,14 @@ __metadata:
     sade: "npm:^1.8.1"
     set-cookie-parser: "npm:^2.6.0"
     sirv: "npm:^3.0.0"
+    vitefu: "npm:^1.0.6"
   peerDependencies:
     "@sveltejs/vite-plugin-svelte": ^3.0.0 || ^4.0.0-next.1 || ^5.0.0
     svelte: ^4.0.0 || ^5.0.0-next.0
     vite: ^5.0.3 || ^6.0.0
   bin:
     svelte-kit: svelte-kit.js
-  checksum: 10c0/085d2595749eb70ed91a7f1ab2a1bb51372603da1207a98c772b4c08558fb12134a7b9e9aa60bea14ca4506d91162b52f1c70f94771da98e6312c7667fd1c056
+  checksum: 10c0/930e58312e0fa9c57055bdef35382dcd16fd61a6e7ad5bde3e174efff3f996e1027fea2d699b4ecff51dd97ac5782fd6a6ceed710d148ce5aee08ccf6e093249
   languageName: node
   linkType: hard
 
@@ -1110,12 +1111,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esrap@npm:^1.4.6":
-  version: 1.4.6
-  resolution: "esrap@npm:1.4.6"
+"esrap@npm:^1.4.8":
+  version: 1.4.9
+  resolution: "esrap@npm:1.4.9"
   dependencies:
     "@jridgewell/sourcemap-codec": "npm:^1.4.15"
-  checksum: 10c0/3fb4fcc301c0d8d97e5b2fed0154b3da57b33325f783b8ed893c3082b835d83cb25b079156d659769862e803b8c22f59094e3ccf97972bb52cfba51528fec27d
+  checksum: 10c0/21b4c58f358360ada596ea46b8dbf47771c6d7734277add55e7cd1d5655126dea25591788712452ed8575a99acd388eae756bf941bab31d7b9fb424620c10c40
   languageName: node
   linkType: hard
 
@@ -1989,8 +1990,8 @@ __metadata:
   linkType: hard
 
 "svelte@npm:^5.0.0":
-  version: 5.33.17
-  resolution: "svelte@npm:5.33.17"
+  version: 5.33.18
+  resolution: "svelte@npm:5.33.18"
   dependencies:
     "@ampproject/remapping": "npm:^2.3.0"
     "@jridgewell/sourcemap-codec": "npm:^1.5.0"
@@ -2001,12 +2002,12 @@ __metadata:
     axobject-query: "npm:^4.1.0"
     clsx: "npm:^2.1.1"
     esm-env: "npm:^1.2.1"
-    esrap: "npm:^1.4.6"
+    esrap: "npm:^1.4.8"
     is-reference: "npm:^3.0.3"
     locate-character: "npm:^3.0.0"
     magic-string: "npm:^0.30.11"
     zimmerframe: "npm:^1.1.2"
-  checksum: 10c0/2a8cd3d032d800a912c455f6dee209f4d9c2aa75a79a5a49889b07d0bfb3d50abbc968dd1b87136522849b8e44e66eed903d6c48dc269464b8b711689cc7d5f8
+  checksum: 10c0/59433c8e9ad0ce1e25e254730e5395c074bd506c4e8050d8d26be67984bee54c2ec3b5db1067f0d2a2c5dca2f2cdd5419dc36535dedb63f9d1b5596d6d29cc29
   languageName: node
   linkType: hard
 
