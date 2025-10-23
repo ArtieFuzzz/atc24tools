@@ -505,8 +505,8 @@ __metadata:
   linkType: hard
 
 "@sveltejs/kit@npm:^2.16.0":
-  version: 2.47.2
-  resolution: "@sveltejs/kit@npm:2.47.2"
+  version: 2.47.3
+  resolution: "@sveltejs/kit@npm:2.47.3"
   dependencies:
     "@standard-schema/spec": "npm:^1.0.0"
     "@sveltejs/acorn-typescript": "npm:^1.0.5"
@@ -531,7 +531,7 @@ __metadata:
       optional: true
   bin:
     svelte-kit: svelte-kit.js
-  checksum: 10c0/c66f41ef7b0d933c7dcaf03268ebec7430a11d3a7a3364a3df1aeabbca3c60850476000d561d1bdbfe360eb99095d19428f5832ee2e321bffc62325a48616f53
+  checksum: 10c0/76923bad9fe2618842f175e63de90f462b12af06f3956c8d9c43d9b4a2986eefc37ea0f42d0e1937064724b2799df267205c5318610c0a53936ab85a7f993453
   languageName: node
   linkType: hard
 
@@ -2018,8 +2018,8 @@ __metadata:
   linkType: hard
 
 "svelte@npm:^5.0.0":
-  version: 5.41.1
-  resolution: "svelte@npm:5.41.1"
+  version: 5.41.2
+  resolution: "svelte@npm:5.41.2"
   dependencies:
     "@jridgewell/remapping": "npm:^2.3.4"
     "@jridgewell/sourcemap-codec": "npm:^1.5.0"
@@ -2035,7 +2035,7 @@ __metadata:
     locate-character: "npm:^3.0.0"
     magic-string: "npm:^0.30.11"
     zimmerframe: "npm:^1.1.2"
-  checksum: 10c0/bb3edf2f5b5a1f808da9627dbc3ff61e097b3a274b43bac0e66d2f1058ca7d4d4b8765100b661df41a470b590b81c64b79b046779cfae5b158689ded23174be9
+  checksum: 10c0/8a3ef05f9612f5a2e1b8658c1233007c2f345105514c39fdec0ceae24856538a244a23d01ea1b3594fdfd90cf63b6d29c3c1499161f1913377cf605b3c9e906b
   languageName: node
   linkType: hard
 
