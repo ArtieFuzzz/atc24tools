@@ -5,7 +5,7 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@emnapi/core@npm:^1.5.0, @emnapi/core@npm:^1.6.0":
+"@emnapi/core@npm:^1.6.0, @emnapi/core@npm:^1.7.1":
   version: 1.7.1
   resolution: "@emnapi/core@npm:1.7.1"
   dependencies:
@@ -15,7 +15,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emnapi/runtime@npm:^1.5.0, @emnapi/runtime@npm:^1.6.0":
+"@emnapi/runtime@npm:^1.6.0, @emnapi/runtime@npm:^1.7.1":
   version: 1.7.1
   resolution: "@emnapi/runtime@npm:1.7.1"
   dependencies:
@@ -285,13 +285,13 @@ __metadata:
   linkType: hard
 
 "@napi-rs/wasm-runtime@npm:^1.0.7":
-  version: 1.0.7
-  resolution: "@napi-rs/wasm-runtime@npm:1.0.7"
+  version: 1.1.0
+  resolution: "@napi-rs/wasm-runtime@npm:1.1.0"
   dependencies:
-    "@emnapi/core": "npm:^1.5.0"
-    "@emnapi/runtime": "npm:^1.5.0"
+    "@emnapi/core": "npm:^1.7.1"
+    "@emnapi/runtime": "npm:^1.7.1"
     "@tybys/wasm-util": "npm:^0.10.1"
-  checksum: 10c0/2d8635498136abb49d6dbf7395b78c63422292240963bf055f307b77aeafbde57ae2c0ceaaef215601531b36d6eb92a2cdd6f5ba90ed2aa8127c27aff9c4ae55
+  checksum: 10c0/ee351052123bfc635c4cef03ac273a686522394ccd513b1e5b7b3823cecd6abb4a31f23a3a962933192b87eb7b7c3eb3def7748bd410edc66f932d90cf44e9ab
   languageName: node
   linkType: hard
 
@@ -486,11 +486,11 @@ __metadata:
   linkType: hard
 
 "@sveltejs/acorn-typescript@npm:^1.0.5":
-  version: 1.0.7
-  resolution: "@sveltejs/acorn-typescript@npm:1.0.7"
+  version: 1.0.8
+  resolution: "@sveltejs/acorn-typescript@npm:1.0.8"
   peerDependencies:
     acorn: ^8.9.0
-  checksum: 10c0/0927a6ca5cfbdfb9da7aa258301e09dd6ef03cc61482e13f85c0a65dacb022569f23c5dd2445307bb3a10cb7d77403c0e3a0d4a536d99afa824b13c4c245e388
+  checksum: 10c0/3de68af48db0b9cbc82872b218cd9134f494ba7716872e8c11bfdbb156b11dba2205541a627eed943733e4a4e8bbb261fe898bf7659105e1a4c641033fe3d4fe
   languageName: node
   linkType: hard
 
@@ -504,8 +504,8 @@ __metadata:
   linkType: hard
 
 "@sveltejs/kit@npm:^2.16.0":
-  version: 2.49.0
-  resolution: "@sveltejs/kit@npm:2.49.0"
+  version: 2.49.1
+  resolution: "@sveltejs/kit@npm:2.49.1"
   dependencies:
     "@standard-schema/spec": "npm:^1.0.0"
     "@sveltejs/acorn-typescript": "npm:^1.0.5"
@@ -530,7 +530,7 @@ __metadata:
       optional: true
   bin:
     svelte-kit: svelte-kit.js
-  checksum: 10c0/d44413b444e61290b0322ad7ea195bc5a26e1cd4a6c8f38803f418bbb859f5b10dc2b5686ad1014c27a01340316c4b77797814d8b27a90722c5b81845c17f6e7
+  checksum: 10c0/f8cd62b0aebb75aef5fd562b81631f4354becd6dc41dce2741cb3d296066c3ee7630b932073e6667320e463f02f4ccf98319bac37c78c5c58c07857a0c64a7a8
   languageName: node
   linkType: hard
 
@@ -1014,12 +1014,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esrap@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "esrap@npm:2.2.0"
+"esrap@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "esrap@npm:2.2.1"
   dependencies:
     "@jridgewell/sourcemap-codec": "npm:^1.4.15"
-  checksum: 10c0/07e6a785fdf57a4d6cd0931455d81f08452b6910ac8af2e234b7414c56b910325e7077db49ddf099c277a1dc522a843e743b410416963a1d1ed8c6c4c8f94c6a
+  checksum: 10c0/bd351c19b6827b69c73f86d9e5bb20fa890911c8e9aaa0581e61a38211346498e8bf4a1ac58811e9306ddbb13cd395db89e0b5302702aba121e8aaf880006f68
   languageName: node
   linkType: hard
 
@@ -1298,9 +1298,9 @@ __metadata:
   linkType: hard
 
 "lru-cache@npm:^11.0.0, lru-cache@npm:^11.1.0, lru-cache@npm:^11.2.1":
-  version: 11.2.2
-  resolution: "lru-cache@npm:11.2.2"
-  checksum: 10c0/72d7831bbebc85e2bdefe01047ee5584db69d641c48d7a509e86f66f6ee111b30af7ec3bd68a967d47b69a4b1fa8bbf3872630bd06a63b6735e6f0a5f1c8e83d
+  version: 11.2.4
+  resolution: "lru-cache@npm:11.2.4"
+  checksum: 10c0/4a24f9b17537619f9144d7b8e42cd5a225efdfd7076ebe7b5e7dc02b860a818455201e67fbf000765233fe7e339d3c8229fc815e9b58ee6ede511e07608c19b2
   languageName: node
   linkType: hard
 
@@ -1745,8 +1745,8 @@ __metadata:
   linkType: hard
 
 "svelte@npm:^5.0.0":
-  version: 5.45.3
-  resolution: "svelte@npm:5.45.3"
+  version: 5.45.5
+  resolution: "svelte@npm:5.45.5"
   dependencies:
     "@jridgewell/remapping": "npm:^2.3.4"
     "@jridgewell/sourcemap-codec": "npm:^1.5.0"
@@ -1758,12 +1758,12 @@ __metadata:
     clsx: "npm:^2.1.1"
     devalue: "npm:^5.5.0"
     esm-env: "npm:^1.2.1"
-    esrap: "npm:^2.2.0"
+    esrap: "npm:^2.2.1"
     is-reference: "npm:^3.0.3"
     locate-character: "npm:^3.0.0"
     magic-string: "npm:^0.30.11"
     zimmerframe: "npm:^1.1.2"
-  checksum: 10c0/7f76f24ab4734068bdd8a4da1b9cc9b2dc85a3e16d8d16cf2fdf4b53095e98012a00bff41749ad627fbf5b94c9974db85d5818af1858f44a40e704ad048889c7
+  checksum: 10c0/4fdb6d6dd80e5e473eb3dc9f90c836095c323ced6902734175cd21e6925a8c99197407ccb8fce27203e10db1fbe3d0c29edc795f52e9571ce6d39e0efc87fc75
   languageName: node
   linkType: hard
 
