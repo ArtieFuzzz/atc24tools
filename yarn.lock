@@ -486,11 +486,11 @@ __metadata:
   linkType: hard
 
 "@sveltejs/acorn-typescript@npm:^1.0.5":
-  version: 1.0.7
-  resolution: "@sveltejs/acorn-typescript@npm:1.0.7"
+  version: 1.0.8
+  resolution: "@sveltejs/acorn-typescript@npm:1.0.8"
   peerDependencies:
     acorn: ^8.9.0
-  checksum: 10c0/0927a6ca5cfbdfb9da7aa258301e09dd6ef03cc61482e13f85c0a65dacb022569f23c5dd2445307bb3a10cb7d77403c0e3a0d4a536d99afa824b13c4c245e388
+  checksum: 10c0/3de68af48db0b9cbc82872b218cd9134f494ba7716872e8c11bfdbb156b11dba2205541a627eed943733e4a4e8bbb261fe898bf7659105e1a4c641033fe3d4fe
   languageName: node
   linkType: hard
 
@@ -879,9 +879,9 @@ __metadata:
   linkType: hard
 
 "devalue@npm:^5.3.2, devalue@npm:^5.5.0":
-  version: 5.5.0
-  resolution: "devalue@npm:5.5.0"
-  checksum: 10c0/7604b11f2afc83e006922a211b1e975109e260c58fba740a5706f148be7345bafdf3ece1012a78bc9dab68f7d88da53e6d6e403e06358932a86f2cd3541e4297
+  version: 5.6.1
+  resolution: "devalue@npm:5.6.1"
+  checksum: 10c0/4dca0e800336003fd1e268c142adfe78f3539cda7384b4f69762a93e0dfc33e223b580251da0a6da4be44962958fcba5eadf122f9720e09f437b28904af9c43e
   languageName: node
   linkType: hard
 
@@ -895,12 +895,12 @@ __metadata:
   linkType: hard
 
 "enhanced-resolve@npm:^5.18.3":
-  version: 5.18.3
-  resolution: "enhanced-resolve@npm:5.18.3"
+  version: 5.18.4
+  resolution: "enhanced-resolve@npm:5.18.4"
   dependencies:
     graceful-fs: "npm:^4.2.4"
     tapable: "npm:^2.2.0"
-  checksum: 10c0/d413c23c2d494e4c1c9c9ac7d60b812083dc6d446699ed495e69c920988af0a3c66bf3f8d0e7a45cb1686c2d4c1df9f4e7352d973f5b56fe63d8d711dd0ccc54
+  checksum: 10c0/8f6d42c8a0787a746c493e724c9de5d091cfe8e3f871f2464e2f78a6c55fa1a3aaba495334f923c8ea3ac23e1472491f79feef6fc0fb46a75169cb447ffbe2dc
   languageName: node
   linkType: hard
 
@@ -1298,9 +1298,9 @@ __metadata:
   linkType: hard
 
 "lru-cache@npm:^11.0.0, lru-cache@npm:^11.1.0, lru-cache@npm:^11.2.1":
-  version: 11.2.2
-  resolution: "lru-cache@npm:11.2.2"
-  checksum: 10c0/72d7831bbebc85e2bdefe01047ee5584db69d641c48d7a509e86f66f6ee111b30af7ec3bd68a967d47b69a4b1fa8bbf3872630bd06a63b6735e6f0a5f1c8e83d
+  version: 11.2.4
+  resolution: "lru-cache@npm:11.2.4"
+  checksum: 10c0/4a24f9b17537619f9144d7b8e42cd5a225efdfd7076ebe7b5e7dc02b860a818455201e67fbf000765233fe7e339d3c8229fc815e9b58ee6ede511e07608c19b2
   languageName: node
   linkType: hard
 
