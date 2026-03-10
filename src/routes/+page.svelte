@@ -25,6 +25,9 @@
             >PDC Generator</button
           >
         </li>
+        <li>
+          <a class="font-mono text-white" href="/calculator">Calculator</a>
+        </li>
       </ol>
     </div>
   </div>

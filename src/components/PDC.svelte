@@ -87,7 +87,7 @@
             cols="45"
             placeholder="Paste ATC24 Flight Plan Here"
             required
-            class="border-1 border-black rounded-sm resize-none p-2 overflow-clip"
+            class="border border-black rounded-sm resize-none p-2 overflow-clip"
             bind:value={flightplan}
           ></textarea>
         </div>
